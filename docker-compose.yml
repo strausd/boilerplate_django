@@ -1,0 +1,25 @@
+# Use docker syntax version 3
+version: '3'
+
+# Each service is a new container
+services:
+  db:
+    # Setting our db to use postgres
+    image: postgres
+    environment:
+      POSTGRES_DB: boilerplate_django
+  web:
+    # Build from current container
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    # Map a volume from our local machine to our container
+    # Gives real time access of our code in our container
+    volumes:
+      - .:/code
+    # Expose port 8000 outside container
+    # HOST:CONTAINER
+    ports:
+      - "8001:8000"
+    # Defines dependencies between services
+    depends_on:
+      - db

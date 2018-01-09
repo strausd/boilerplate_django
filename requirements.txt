@@ -1,0 +1,12 @@
+# Base requirements
+Django>=2.0,<2.1
+psycopg2
+djangorestframework
+
+# Dev requirements
+coverage
+django-debug-toolbar
+Faker
+django-nose
+model-mommy
+requests-mock
