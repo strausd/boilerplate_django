@@ -11,6 +11,7 @@ services:
   web:
     # Build from current container
     build: .
+    # Run command to do db stuff
     command: sh docker/docker-compose-commands.sh
     # Map a volume from our local machine to our container
     # Gives real time access of our code in our container
