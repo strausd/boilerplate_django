@@ -1,0 +1,1 @@
+web: gunicorn boilerplate_django.wsgi_heroku --log-file -

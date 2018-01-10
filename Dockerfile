@@ -15,3 +15,6 @@ COPY . /code/
 
 # Install dependencies. This will break if no requirements.txt
 RUN pip install -r requirements.txt
+
+# Start django server using port from Heroku
+CMD python3 manage.py runserver 0.0.0.0:$PORT

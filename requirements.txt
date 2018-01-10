@@ -10,3 +10,7 @@ Faker
 django-nose
 model-mommy
 requests-mock
+
+# Heroku requirements
+gunicorn
+dj-database-url
