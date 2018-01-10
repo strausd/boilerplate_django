@@ -9,4 +9,7 @@ db_from_env = dj_database_url.config(
 )
 DATABASES['default'] = (db_from_env)
 
+print('===================================================================================================')
+print(DATABASES)
+
 ALLOWED_HOSTS = ['strausd-boilerplate-django.herokuapp.com']
