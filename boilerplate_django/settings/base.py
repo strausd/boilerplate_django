@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'boilerplate_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'boilerplate_django',
         'USER': 'postgres',
         'HOST': 'db',

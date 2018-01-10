@@ -11,7 +11,7 @@ services:
   web:
     # Build from current container
     build: .
-    command: python3 manage.py runserver 0.0.0.0:8000
+    command: sh docker/docker-compose-commands.sh
     # Map a volume from our local machine to our container
     # Gives real time access of our code in our container
     volumes:
