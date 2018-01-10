@@ -1,3 +1,2 @@
-1. Set environment variables at start
-2. Set start commands list on Docker create on Heroku (migrate, then run server)
-3. Automate collect static on heroku
+1. Set start commands list on Docker create on Heroku (migrate, then run server)
+2. Get collectstatic working
