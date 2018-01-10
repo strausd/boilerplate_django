@@ -14,3 +14,4 @@ requests-mock
 # Heroku requirements
 gunicorn
 dj-database-url
+whitenoise
