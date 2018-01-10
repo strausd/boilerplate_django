@@ -7,6 +7,7 @@ ENV PYTHONUNBUFFERED 1
 # Set environment variable to use heroku settings
 ENV RANDOM_TEST='this_is_working'
 ENV ANOTHER NOPE
+ENV DJANGO_SETTINGS_MODULE boilerplate_django.settings.heroku
 
 # Make container directory for our code inside of Docker
 RUN mkdir /code
