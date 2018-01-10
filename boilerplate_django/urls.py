@@ -1,7 +1,8 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, parrerns
 from django.conf import settings
 from django.conf.urls import include, url
+from django.http import HttpResponse
 
 import debug_toolbar
 
@@ -18,3 +19,7 @@ if settings.DEBUG:
     urlpatterns += [
         url(r'^__debug__/', include(debug_toolbar.urls)),
     ]
+
+urlpatterns = patterns('', ... (r'^robots.txt$', lambda r: HttpResponse(
+    "User-agent: *\nDisallow: /", mimetype="text/plain"))
+)
