@@ -5,6 +5,12 @@
   - Docker, Django, Wagtail
   - Docker, Django, Wagtail, React
 
+## Steps to deploy on Heroku
+  1. Create a Heroku Project
+  2. Add the postgres add on
+  3. run `heroku container:login`
+  4. run `heroku container:push web`
+
 ## Random Docker commands
 
 #### Delete all containers and images
@@ -12,9 +18,9 @@
     docker rm $(docker ps -a -q)
     docker rmi $(docker images -q)
 ###### What is this doing?
-  - Stop all containers
-  - Delete all containers
-  - Delete all images
+  1. Stop all containers
+  2. Delete all containers
+  3. Delete all images
 
 #### Run a command inside the docker image
     docker-compose run [container_name] [command]
