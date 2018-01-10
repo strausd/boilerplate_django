@@ -5,7 +5,7 @@ FROM python:3
 ENV PYTHONUNBUFFERED 1
 
 # Set environment variable to use heroku settings
-RUN -e RANDOM_TEST='this_is_working'
+ENV RANDOM_TEST='this_is_working'
 
 # Make container directory for our code inside of Docker
 RUN mkdir /code
