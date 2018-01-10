@@ -1,6 +1,6 @@
 # Base requirements
 Django>=2.0,<2.1
-psycopg2
+#psycopg2
 djangorestframework
 
 # Dev requirements
