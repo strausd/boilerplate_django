@@ -8,8 +8,10 @@
 ## Steps to deploy on Heroku
   1. Create a Heroku Project
   2. Add the postgres add on
-  3. run `heroku container:login`
-  4. run `heroku container:push web`
+  3. Set environment variable on heroku: DJANGO_SETTINGS_MODULE='boilerplate_django.settings.heroku'
+  4. run `heroku container:login`
+  5. run `heroku container:push web`
+  6. run 
 
 ## Random Docker commands
 

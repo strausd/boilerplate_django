@@ -4,9 +4,6 @@ FROM python:3
 # Send all application output to terminal without changed
 ENV PYTHONUNBUFFERED 1
 
-# Set environment variable to use heroku settings
-ENV DJANGO_SETTINGS_MODULE boilerplate_django.settings.heroku
-
 # Make container directory for our code inside of Docker
 RUN mkdir /code
 
