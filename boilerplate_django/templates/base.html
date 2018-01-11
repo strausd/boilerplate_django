@@ -1,13 +1,14 @@
-<!-- {% load static from staticfiles %} -->
+{% load static %}
 
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>boilerplate_django</title>
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}"> -->
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
     </head>
     <body>
         <h1>boilerplate_django</h1>
+        <img src="{% static 'img/test_image.png' %}" alt="Test image">
     </body>
 </html>
