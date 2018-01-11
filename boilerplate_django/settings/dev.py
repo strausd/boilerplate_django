@@ -24,7 +24,7 @@ if DEBUG:
     	'debug_toolbar.middleware.DebugToolbarMiddleware',
     ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+# STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
 # Test runner required for Django Unit Testing
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
@@ -45,3 +45,9 @@ FAKER_LOCALE = None
 FAKER_PROVIDERS = None
 
 ALLOWED_HOSTS += ['localhost']
+
+MIDDLEWARE += [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
