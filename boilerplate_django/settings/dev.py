@@ -43,3 +43,9 @@ FAKER_LOCALE = None
 FAKER_PROVIDERS = None
 
 ALLOWED_HOSTS += ['localhost']
+
+MIDDLEWARE += [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
