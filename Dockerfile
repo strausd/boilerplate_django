@@ -5,7 +5,7 @@ FROM python:3
 ENV PYTHONUNBUFFERED 1
 
 # Set environment variable to use heroku settings
-ENV DJANGO_SETTINGS_MODULE boilerplate_django.settings.heroku
+# ENV DJANGO_SETTINGS_MODULE boilerplate_django.settings.heroku
 
 # Make container directory for our code inside of Docker
 RUN mkdir /code
@@ -24,3 +24,4 @@ CMD python3 manage.py migrate
 
 # Start django server using port from Heroku
 CMD python3 manage.py runserver 0.0.0.0:$PORT
+# CMD [/code/docker/docker-startup-commands.sh]
