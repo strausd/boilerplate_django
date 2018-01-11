@@ -24,8 +24,6 @@ if DEBUG:
     	'debug_toolbar.middleware.DebugToolbarMiddleware',
     ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
-
 # Test runner required for Django Unit Testing
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
