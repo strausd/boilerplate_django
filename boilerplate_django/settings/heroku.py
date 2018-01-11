@@ -6,7 +6,7 @@ DATABASES['default'] = dj_database_url.config()
 
 ALLOWED_HOSTS = ['strausd-boilerplate-django.herokuapp.com']
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE += [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
