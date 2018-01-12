@@ -7,15 +7,15 @@
 
 ## Steps to run locally
   1. Run `docker-compose up`
-  2. run `docker-compose run web python3 manage.py migrate`
+  2. Run `docker-compose run web python3 manage.py migrate`
 
 ## Steps to deploy on Heroku
-  1. Create a Heroku Project
-  2. Add the postgres add on
-  3. Set environment variable on heroku: DJANGO_SETTINGS_MODULE='boilerplate_django.settings.heroku'
-  4. run `heroku container:login`
-  5. run `heroku container:push web`
-  6. run `heroku run python3 manage.py migrate`
+  1. Run `heroku create [app_name]`
+  2. Run `heroku addons:create heroku-postgresql:hobby-dev`
+  3. Run `heroku config:set DJANGO_SETTINGS_MODULE=boilerplate_django.settings.heroku`
+  4. Run `heroku container:login`
+  5. Run `heroku container:push web`
+  6. Run `heroku run python3 manage.py migrate`
 
 ## Random Docker commands
 

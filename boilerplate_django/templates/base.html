@@ -10,5 +10,8 @@
     <body>
         <h1>boilerplate_django</h1>
         <img src="{% static 'img/test_image.png' %}" alt="Test image">
+        {% for p in people %}
+            <p>{{ p.name }}</p>
+        {% endfor %}
     </body>
 </html>
