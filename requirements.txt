@@ -2,6 +2,7 @@
 Django>=2.0,<2.1
 psycopg2
 djangorestframework
+wagtail>=1.13.1,<2.1
 
 # Dev requirements
 coverage
